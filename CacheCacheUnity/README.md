@@ -1,13 +1,15 @@
 # Cache-Cache ! — Kit Unity
 
-Portage du jeu web "Cache-Cache !" vers Unity (2022.3 LTS ou Unity 6).
+Portage du jeu web "Cache-Cache !" vers Unity. La version de référence du projet
+est **2022.3.62f1**, avec le pipeline Built-in ; Unity 6 et URP ne sont pas validés.
+Voir [BUILD.md](BUILD.md) pour ouvrir le projet existant et préparer la scène.
 Tout est généré par code : aucun sprite, aucune police custom, aucun asset à importer
 (sauf TextMeshPro Essentials). Idéal pour itérer vite puis remplacer l'art procédural
 par tes propres illustrations.
 
 ## Démarrage en 5 minutes
 
-1. Crée un projet Unity **2D (URP ou Built-in)**, version 2022.3 LTS ou Unity 6.
+1. Pour utiliser les scripts dans un nouveau projet, crée un projet Unity **2D Built-in** avec Unity 2022.3.62f1.
 2. `Window > TextMeshPro > Import TMP Essential Resources` (obligatoire pour le texte).
 3. Dans la scène vide : `GameObject > Create Empty`, renomme-le **CacheCache**.
 4. Ajoute le composant **Bootstrap** (glisse Bootstrap.cs sur l'objet).
