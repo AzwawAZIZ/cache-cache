@@ -142,7 +142,7 @@ namespace CacheCache
             return sr;
         }
 
-        public static void AddSprite(Transform parent, string name, Sprite sprite, Color color, Vector3 position, Vector3 size, int order, float rotation = 0f)
+        public static SpriteRenderer AddSprite(Transform parent, string name, Sprite sprite, Color color, Vector3 position, Vector3 size, int order, float rotation = 0f)
         {
             var go = new GameObject(name);
             go.transform.SetParent(parent, false);
@@ -153,6 +153,7 @@ namespace CacheCache
             sr.sprite = sprite;
             sr.color = color;
             sr.sortingOrder = order;
+            return sr;
         }
     }
 }

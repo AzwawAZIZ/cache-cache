@@ -238,7 +238,7 @@ namespace CacheCache
             muteButton.onClick.AddListener(() => { if (game != null) game.ToggleMute(); });
             muteLabel = Label(muteRt, "ON", 22f, Ink, TextAlignmentOptions.Center, 40f, 30f);
 
-            rosterRoot = Rect("Roster", hudRoot.transform, new Vector2(0f, 1f), new Vector2(1f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -202f), new Vector2(-36f, 92f));
+            rosterRoot = Rect("Roster", hudRoot.transform, new Vector2(0f, 1f), new Vector2(1f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -202f), new Vector2(-36f, 92f)).gameObject;
             var rosterBlocker = rosterRoot.gameObject.AddComponent<Image>();
             rosterBlocker.color = new Color(0f, 0f, 0f, 0f);
             rosterBlocker.raycastTarget = true;
